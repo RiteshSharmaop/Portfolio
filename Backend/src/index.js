@@ -1,16 +1,26 @@
-import express from 'express';
-import cors from 'cors';
+import dotenv from "dotenv";
+import connectDB from "./db/index.js";
+import { app } from "./app.js";
 
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-app.use(cors());
-app.use(express.json());
-
-// Your routes here
-app.get('/api/test', (req, res) => {
-  res.json({ message: 'Backend is working!' });
+dotenv.config({
+    path: './.env'
 });
 
-// For Vercel, remove app.listen
-export default app;
+
+
+connectDB().then(()=>{
+    //  db is connected but express not able to connect thata why we did (listen --> error)
+    app.on("errror", (error) => {
+        console.log("ERRR error: ", error);
+        throw error
+    })
+
+    // if (DB and Express) is working
+    // listen to port using express
+    app.listen(process.env.PORT || 8000, () => {
+        console.log(`App is listening to PORT ${process.env.PORT}`);
+    });
+}).catch((err) => {
+    console.log("Mongo DB Connection failed in index.js :  " , err );
+    
+});
