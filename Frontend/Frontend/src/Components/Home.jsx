@@ -12,7 +12,7 @@ export default function Home() {
                 <p>i am persuing 4years of B.tech from Lakshmi narain college of technology.
 
                 </p>
-                <a href="#about"><button className="btn">about me <i className="fas fa-user"></i></button></a>
+                <a href="/about"><button className="btn">about me <i className="fas fa-user"></i></button></a>
 
             </section>
             </div>

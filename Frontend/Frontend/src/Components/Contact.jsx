@@ -41,7 +41,7 @@ function Contact() {
 
                     </div>
 
-                    <form action="http://localhost:8000/c/contact" method="POST">
+                    <form action="https://portfolio-4qm8.vercel.app/c/contact" method="POST">
                     
                         <input type="text" id="name" name="name" placeholder="name" className="box" />
                         <input type="email"  id="email" name="email"placeholder="email" className="box" />
