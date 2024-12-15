@@ -41,13 +41,13 @@ function Contact() {
 
                     </div>
 
-                    <form action="POST">
+                    <form action="http://localhost:8000/c/contact" method="POST">
+                    
+                        <input type="text" id="name" name="name" placeholder="name" className="box" />
+                        <input type="email"  id="email" name="email"placeholder="email" className="box" />
+                        <input type="number" id="number" name="number" placeholder="number" className="box" />
 
-                        <input type="text" placeholder="name" className="box" />
-                        <input type="email" placeholder="email" className="box" />
-                        <input type="number" placeholder="phone number" className="box" />
-
-                        <textarea name="" id="" cols="30" rows="10" className="box message" placeholder="message"></textarea>
+                        <textarea name="message" id="messsage" cols="30" rows="10" className="box message" placeholder="message"></textarea>
                         <p> &#160;</p>
                         <button type="submit" className="btn"> send <i className="fas fa-paper-plane"></i> </button>
 
