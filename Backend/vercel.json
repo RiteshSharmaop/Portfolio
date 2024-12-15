@@ -3,14 +3,14 @@
   "name": "portfolio-backend",
   "builds": [
     {
-      "src": "/src/index.js", 
+      "src": "*.js", 
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/src/index.js"
+      "src": "/(.*)",
+      "dest": "/"
     }
   ],
   "env": {
