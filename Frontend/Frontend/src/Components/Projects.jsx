@@ -19,7 +19,6 @@ export default function Projects() {
 
         <div className="box-container">
           <ProjectBox 
-            id='playmee'
             title="PlayMee"
             navigateTo="/wip"
             desc="A Backend Web App Where user can register and login to do tweet, upload video and can do like, subscribe share, and track history. Developed a scalable RESTful API (CRUD) using Node.js, Express, and MongoDB. Implemented secure JWT authentication, data validation middleware, and conducted thorough endpoint testing to ensure reliability, high performance, and modularity. Handling videos vie a Cloudinary and Multer "
@@ -34,7 +33,7 @@ export default function Projects() {
             />
 
           <ProjectBox
-            title="Uber Clone"
+            title="RideGo"
             navigateTo="/wip"
             desc="A Backend Web App Where user can register and login to do tweet, upload video and can do like, subscribe share, and track history. Developed a scalable RESTful API (CRUD) using Node.js, Express, and MongoDB. Implemented secure JWT authentication, data validation middleware, and conducted thorough endpoint testing to ensure reliability, high performance, and modularity. Handling videos vie a Cloudinary and Multer "
             imgLink={rideit}
@@ -46,7 +45,7 @@ export default function Projects() {
             imgLink={nft}
             />
             <ProjectBox
-              title="MusicIi"
+              title="Music-Ii"
               navigateTo="/wip"
               desc="A Backend Web App Where user can register and login to do tweet, upload video and can do like, subscribe share, and track history. Developed a scalable RESTful API (CRUD) using Node.js, Express, and MongoDB. Implemented secure JWT authentication, data validation middleware, and conducted thorough endpoint testing to ensure reliability, high performance, and modularity. Handling videos vie a Cloudinary and Multer "
               imgLink={musicfi}
