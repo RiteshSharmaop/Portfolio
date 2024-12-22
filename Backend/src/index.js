@@ -5,8 +5,7 @@ import { app } from "./app.js";
 dotenv.config({
     path: './.env'
 });
-
-
+// done
 
 connectDB().then(()=>{
     //  db is connected but express not able to connect thata why we did (listen --> error)
@@ -14,7 +13,6 @@ connectDB().then(()=>{
         console.log("ERRR error: ", error);
         throw error
     })
-
     // if (DB and Express) is working
     // listen to port using express
     app.listen(process.env.PORT || 8000, () => {

@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 224" style="height: 14rem; width: 24rem;">
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa"/>
+      <stop offset="100%" style="stop-color:#e9ecef"/>
+    </linearGradient>
+    
+    <!-- Map grid pattern -->
+    <pattern id="map-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#000000" stroke-width="0.5" opacity="0.05"/>
+    </pattern>
+
+    <!-- Car path for animation -->
+    <path id="car-path" d="M50,112 Q150,50 250,112 T359,112" fill="none"/>
+    
+    <!-- Location ping animation -->
+    <radialGradient id="ping-gradient">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="384" height="224" fill="url(#bg-gradient)"/>
+  <rect width="384" height="224" fill="url(#map-pattern)"/>
+
+  <!-- Roads -->
+  <path d="M0,80 H384" stroke="#e0e0e0" stroke-width="20" opacity="0.3"/>
+  <path d="M0,160 H384" stroke="#e0e0e0" stroke-width="20" opacity="0.3"/>
+  <path d="M96,0 V224" stroke="#e0e0e0" stroke-width="20" opacity="0.3"/>
+  <path d="M288,0 V224" stroke="#e0e0e0" stroke-width="20" opacity="0.3"/>
+
+  <!-- Route line -->
+  <path d="M50,112 Q150,50 250,112 T359,112" 
+        stroke="#000000" 
+        stroke-width="2" 
+        stroke-dasharray="4,4"
+        opacity="0.3"
+        fill="none">
+    <animate attributeName="stroke-dashoffset"
+             from="0"
+             to="16"
+             dur="1s"
+             repeatCount="indefinite"/>
+  </path>
+
+  <!-- Location markers -->
+  <g transform="translate(50,112)">
+    <!-- Pickup location -->
+    <circle r="15" fill="url(#ping-gradient)">
+      <animate attributeName="r" from="5" to="15" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="1" to="0" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="6" fill="#000000"/>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#000000">PICKUP</text>
+  </g>
+
+  <g transform="translate(359,112)">
+    <!-- Dropoff location -->
+    <circle r="15" fill="url(#ping-gradient)">
+      <animate attributeName="r" from="5" to="15" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="1" to="0" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="6" fill="#000000"/>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#000000">DROPOFF</text>
+  </g>
+
+  <!-- Animated car -->
+  <g>
+    <animateMotion
+      dur="3s"
+      repeatCount="indefinite"
+      path="M50,112 Q150,50 250,112 T359,112">
+      <mpath href="#car-path"/>
+    </animateMotion>
+    
+    <!-- Car icon -->
+    <g transform="translate(-12, -8)">
+      <!-- Car body -->
+      <path d="M2,8 L6,3 H18 L22,8 L22,14 H2 Z" fill="#000000"/>
+      <!-- Windows -->
+      <path d="M7,5 H17 L20,8 H4 Z" fill="#ffffff" opacity="0.8"/>
+      <!-- Wheels -->
+      <circle cx="7" cy="14" r="2" fill="#333333"/>
+      <circle cx="17" cy="14" r="2" fill="#333333"/>
+    </g>
+  </g>
+
+  <!-- Logo text -->
+  <g transform="translate(192,60)">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#000000">RideGo</text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666666">Your Ride, Your Way</text>
+  </g>
+
+  <!-- Bottom info panel -->
+  <g transform="translate(192,170)">
+    <!-- Ride options -->
+    <rect x="-100" y="-15" width="200" height="30" rx="15" fill="white" stroke="#000000" stroke-width="1"/>
+    
+    <!-- Icons -->
+    <g transform="translate(-70,0)">
+      <circle r="10" fill="#000000"/>
+      <text x="0" y="3" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">ECO</text>
+    </g>
+    
+    <g transform="translate(0,0)">
+      <circle r="10" fill="#000000"/>
+      <text x="0" y="3" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">PRO</text>
+    </g>
+    
+    <g transform="translate(70,0)">
+      <circle r="10" fill="#000000"/>
+      <text x="0" y="3" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">LUX</text>
+    </g>
+  </g>
+
+  <!-- ETA Display -->
+  <g transform="translate(48,40)">
+    <rect width="80" height="30" rx="15" fill="white" stroke="#000000" stroke-width="1"/>
+    <text x="40" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">ETA: 5 min</text>
+  </g>
+</svg>

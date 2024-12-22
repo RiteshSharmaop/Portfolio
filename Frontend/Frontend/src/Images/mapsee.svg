@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 224" style="height: 14rem; width: 24rem;">
+  <!-- Previous defs and background elements -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4ff"/>
+      <stop offset="100%" style="stop-color:#e6eeff"/>
+    </linearGradient>
+    
+    <pattern id="map-grid" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#4A90E2" stroke-width="0.5" opacity="0.1"/>
+      <circle cx="25" cy="25" r="1" fill="#4A90E2" opacity="0.1"/>
+    </pattern>
+    
+    <path id="route-path" d="M25,112 Q100,50 200,112 T359,112" fill="none"/>
+    
+    <radialGradient id="pulse-gradient">
+      <stop offset="0%" stop-color="#4A90E2" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4A90E2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background and map elements -->
+  <rect width="384" height="224" fill="url(#bg-gradient)"/>
+  <rect width="384" height="224" fill="url(#map-grid)"/>
+
+  <!-- Roads -->
+  <path d="M0,75 H384" stroke="#DDE4FF" stroke-width="8" opacity="0.3"/>
+  <path d="M0,150 H384" stroke="#DDE4FF" stroke-width="8" opacity="0.3"/>
+  <path d="M96,0 V224" stroke="#DDE4FF" stroke-width="8" opacity="0.3"/>
+  <path d="M288,0 V224" stroke="#DDE4FF" stroke-width="8" opacity="0.3"/>
+
+  <!-- Route line -->
+  <path d="M25,112 Q100,50 200,112 T359,112" 
+        stroke="#4A90E2" 
+        stroke-width="2" 
+        stroke-dasharray="4,4"
+        fill="none">
+    <animate attributeName="stroke-dashoffset"
+             from="0"
+             to="16"
+             dur="1s"
+             repeatCount="indefinite"/>
+  </path>
+
+  <!-- Location markers -->
+  <g transform="translate(25,112)">
+    <circle r="12" fill="url(#pulse-gradient)">
+      <animate attributeName="r" from="10" to="15" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="0.6" to="0" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="5" fill="#4A90E2"/>
+    <circle r="10" fill="#4A90E2" opacity="0.2"/>
+    <text x="0" y="20" text-anchor="middle" fill="#4A90E2" font-family="Arial, sans-serif" font-weight="bold" font-size="8">Start</text>
+  </g>
+
+  <g transform="translate(359,112)">
+    <circle r="12" fill="url(#pulse-gradient)">
+      <animate attributeName="r" from="10" to="15" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="0.6" to="0" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="5" fill="#4A90E2"/>
+    <circle r="10" fill="#4A90E2" opacity="0.2"/>
+    <text x="0" y="20" text-anchor="middle" fill="#4A90E2" font-family="Arial, sans-serif" font-weight="bold" font-size="8">End</text>
+  </g>
+
+  <!-- Animated yellow bus -->
+  <g>
+    <animateMotion
+      dur="4s"
+      repeatCount="indefinite"
+      path="M25,112 Q100,50 200,112 T359,112">
+      <mpath href="#route-path"/>
+    </animateMotion>
+    
+    <!-- Detailed bus icon -->
+    <g transform="translate(-12, -8)">
+      <!-- Main bus body -->
+      <rect x="0" y="0" width="24" height="15" rx="3" fill="#FFD700"/>
+      <!-- Windows -->
+      <rect x="3" y="2" width="18" height="5" rx="1" fill="#ffffff" opacity="0.8"/>
+      <!-- Headlight -->
+      <circle cx="22.8" cy="11" r="1.2" fill="#ffffff"/>
+      <!-- Wheels -->
+      <circle cx="6" cy="15" r="2.4" fill="#333333"/>
+      <circle cx="18" cy="15" r="2.4" fill="#333333"/>
+      <!-- Wheel rims -->
+      <circle cx="6" cy="15" r="1.2" fill="#666666"/>
+      <circle cx="18" cy="15" r="1.2" fill="#666666"/>
+      <!-- Door -->
+      <rect x="12" y="7" width="2.4" height="7" rx="0.6" fill="#ffffff" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- Compass -->
+  <g transform="translate(336,37)">
+    <circle r="17" fill="white" opacity="0.9"/>
+    <circle r="15" fill="none" stroke="#4A90E2" stroke-width="1"/>
+    <path d="M0,-12 L7,7 L0,2 L-7,7 Z" fill="#4A90E2"/>
+    <text x="0" y="-5" text-anchor="middle" fill="#4A90E2" font-family="Arial, sans-serif" font-weight="bold" font-size="7">N</text>
+  </g>
+
+  <!-- MapSee Logo Text -->
+  <g transform="translate(192,25)">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#4A90E2">MapSee</text>
+    <text x="0" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">Track Your Campus Bus</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(48,187)">
+    <rect width="110" height="35" rx="5" fill="white" opacity="0.95" stroke="#4A90E2" stroke-width="1"/>
+    <g transform="translate(10,10) scale(0.3)">
+      <!-- Mini bus icon for legend -->
+      <rect x="0" y="0" width="24" height="15" rx="3" fill="#FFD700"/>
+      <rect x="3" y="2" width="18" height="5" rx="1" fill="#ffffff" opacity="0.8"/>
+      <circle cx="22.8" cy="11" r="1.2" fill="#ffffff"/>
+      <circle cx="6" cy="15" r="2.4" fill="#333333"/>
+      <circle cx="18" cy="15" r="2.4" fill="#333333"/>
+    </g>
+    <text x="25" y="15" fill="#666" font-family="Arial, sans-serif" font-size="8">Active Bus</text>
+    <circle cx="15" cy="25" r="3" fill="#4A90E2"/>
+    <text x="25" y="27" fill="#666" font-family="Arial, sans-serif" font-size="8">Bus Stop</text>
+  </g>
+</svg>

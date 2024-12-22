@@ -365,6 +365,7 @@ section{
 }
 
 .projects .box-container .box{
+
     height: 14rem;
     width:24rem;
     border-radius: 1rem;
@@ -378,7 +379,21 @@ section{
     width:100%;
     object-fit: cover;
 }
+.complited-till{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 145%;
+}
+.cmptill{
+    
 
+}
+.datee{
+    color: var(--yellow);
+}
 .projects .box-container .box:hover img{
     transform: scale(1.2);
 }

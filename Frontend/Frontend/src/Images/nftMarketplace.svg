@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 224" style="height: 14rem; width: 24rem;">
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#013369"/>
+      <stop offset="100%" style="stop-color:#002244"/>
+    </linearGradient>
+    
+    <!-- Football pattern -->
+    <pattern id="football-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 20 Q 20 0, 0 20 Q 20 40, 40 20" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+
+    <!-- Shine effect -->
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="384" height="224" fill="url(#bg-gradient)"/>
+  <rect width="384" height="224" fill="url(#football-pattern)"/>
+
+  <!-- Football field lines -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.2">
+    <line x1="0" y1="112" x2="384" y2="112"/>
+    <line x1="96" y1="0" x2="96" y2="224"/>
+    <line x1="192" y1="0" x2="192" y2="224"/>
+    <line x1="288" y1="0" x2="288" y2="224"/>
+  </g>
+
+  <!-- Animated Football -->
+  <g transform="translate(192,112)">
+    <g>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 0 0"
+        to="360 0 0"
+        dur="4s"
+        repeatCount="indefinite"/>
+      
+      <!-- Football -->
+      <path d="M-20,-12 Q0,-15 20,-12 Q25,-5 25,0 Q25,5 20,12 Q0,15 -20,12 Q-25,5 -25,0 Q-25,-5 -20,-12" 
+            fill="#874000">
+        <animate attributeName="opacity"
+                 values="1;0.8;1"
+                 dur="2s"
+                 repeatCount="indefinite"/>
+      </path>
+      <!-- Laces -->
+      <line x1="-5" y1="0" x2="5" y2="0" stroke="white" stroke-width="1"/>
+      <line x1="-5" y1="-3" x2="5" y2="-3" stroke="white" stroke-width="1"/>
+      <line x1="-5" y1="3" x2="5" y2="3" stroke="white" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- Shopping cart icon with pulse -->
+  <g transform="translate(320,50)">
+    <circle r="20" fill="#C60C30" opacity="0.2">
+      <animate attributeName="r"
+               values="15;20;15"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </circle>
+    <path d="M-10,0 H2 L6,-12 H-6 M-8,4 A3,3 0 1,0 -2,4 A3,3 0 1,0 -8,4 M4,4 A3,3 0 1,0 10,4 A3,3 0 1,0 4,4" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="2"/>
+  </g>
+
+  <!-- Logo Text -->
+  <g transform="translate(192,80)">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff">NFL MARKET</text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#C60C30">Official NFL Merchandise</text>
+  </g>
+
+  <!-- Featured Items Panel -->
+  <g transform="translate(192,160)">
+    <rect x="-150" y="-20" width="300" height="40" rx="20" fill="#ffffff" opacity="0.1"/>
+    
+    <!-- Item categories -->
+    <g transform="translate(-100,0)">
+      <circle r="15" fill="#C60C30"/>
+      <text x="0" y="4" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#ffffff">JERSEYS</text>
+    </g>
+    
+    <g transform="translate(0,0)">
+      <circle r="15" fill="#C60C30"/>
+      <text x="0" y="4" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#ffffff">GEAR</text>
+    </g>
+    
+    <g transform="translate(100,0)">
+      <circle r="15" fill="#C60C30"/>
+      <text x="0" y="4" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#ffffff">TICKETS</text>
+    </g>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(192,40)">
+    <rect x="-100" y="-15" width="200" height="30" rx="15" fill="#ffffff" opacity="0.1"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" opacity="0.6">Search NFL merchandise...</text>
+  </g>
+
+  <!-- Stars animation -->
+  <g>
+    <circle cx="50" cy="50" r="2" fill="#ffffff" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="330" cy="180" r="2" fill="#ffffff" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="40" r="2" fill="#ffffff" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

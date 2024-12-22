@@ -9,6 +9,7 @@ import Education from "./Components/Education"
 import Projects from "./Components/Projects"
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
+import WorkInProgress from "./Components/WorkInProgress";
 
 
 const router = createBrowserRouter([
@@ -36,13 +37,17 @@ const router = createBrowserRouter([
         path: "Education",
         element: <Education />
       },
+      // {
+      //   path: "/c/contact",
+      //   element: <Contact />
+      // },
+      // {
+      //   path: "/c/POST",
+      //   element: <Contact />
+      // },
       {
-        path: "/c/contact",
-        element: <Contact />
-      },
-      {
-        path: "/c/POST",
-        element: <Contact />
+        path: "/wip",
+        element: <WorkInProgress date = "31-March-2025"/>
       },
     ]
   }
