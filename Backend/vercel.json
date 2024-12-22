@@ -1,20 +1,24 @@
 {
   "version": 2,
-  "name": "portfolio-backend",
   "builds": [
     {
+<<<<<<< HEAD
       "src": "*.js", 
+=======
+      "src": "src/index.js",
+>>>>>>> e0df186cf1147d91dc6b25c0e9c6b4ac39f89fd0
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
+<<<<<<< HEAD
       "src": "/(.*)",
       "dest": "/"
+=======
+      "src": "/api/(.*)",
+      "dest": "src/index.js"
+>>>>>>> e0df186cf1147d91dc6b25c0e9c6b4ac39f89fd0
     }
-  ],
-  "env": {
-    "MONGODB_URI": "mongodb+srv://ritesh:ritesh9122@portfolio.74jp2.mongodb.net",
-    "CORS_ORIGIN" : "*"
-  }
+  ]
 }
