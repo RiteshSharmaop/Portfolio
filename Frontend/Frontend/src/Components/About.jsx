@@ -17,7 +17,7 @@ export default function About() {
                         <h3> <span> qualification : </span> B.tech </h3>
                         <h3> <span> post : </span> student </h3>
                         <h3> <span> language : </span> hindi / english </h3>
-                        <a href="https://drive.google.com/file/d/1NWA4Qd_cV7lnNeK8sIu2pNRIs0wQ7JeH/view?usp=sharing"><button className="btn"> download CV <i className="fas fa-download"></i> </button></a>
+                        <a href="https://docs.google.com/document/d/1YbnhMC4K3L5KF9CBdGWUw1Kaq3AXmdqr/edit?usp=sharing&ouid=103630672867232895794&rtpof=true&sd=true"><button className="btn"> download CV <i className="fas fa-download"></i> </button></a>
                     </div>
 
                      <div className="counter">
