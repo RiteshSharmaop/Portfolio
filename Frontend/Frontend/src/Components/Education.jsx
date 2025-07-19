@@ -16,7 +16,7 @@ function Education() {
             <i class="fas fa-graduation-cap"><FontAwesomeIcon icon={faGraduationCap} className="fas fa-graduation-cap"/>
             </i>
             <span>2022-Present</span>
-            <h3>LNCT Bhopal</h3>
+            <h3>Lakshmi narain college of technology Bhopal</h3>
             <p class="bold">B.tech</p>
             <p>
               Computer Science And Engineering and Artificial Intelligence and
@@ -28,7 +28,7 @@ function Education() {
             <i class="fas fa-graduation-cap"><FontAwesomeIcon icon={faGraduationCap} className="fas fa-graduation-cap"/>
             </i>
             <span>2020-2023</span>
-            <h3>SV Polytechnic</h3>
+            <h3>Sardar vallabhbhai Polytechnic College</h3>
             <p class="bold">Diploma</p>
             <p>Computer Science And Engineering</p>
           </div>

@@ -7,7 +7,7 @@ export default function About() {
 
             <section className="about" id="about">
 
-                <h1 className="heading"> <span>about</span> me </h1>
+                <h1 className="heading"> about<span> me </span></h1>
 
                 <div className="row">
 
@@ -23,7 +23,7 @@ export default function About() {
                      <div className="counter">
 
                        <div className="box">
-                            <span>5th</span>
+                            <span>6th</span>
                             <h3>Semester</h3>
                         </div>
 

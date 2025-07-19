@@ -8,6 +8,7 @@ const SocialButtons = () => {
     { icon: Github, href: 'https://github.com/RiteshSharmaop', label: 'GitHub', colorClass: 'hover-github' },
     { icon: Mail, href: 'https://mail.google.com/mail/?view=cm&fs=1&to=ritesh.lnct@gmail.com', label: 'Email', colorClass: 'hover-email' },
     { icon: Code2, href: 'https://www.codechef.com/users/riteshnub', label: 'CodeChef', colorClass: 'hover-codechef' },
+    { icon: Code2, href: 'https://codeforces.com/profile/noob1204', label: 'Codeforces', colorClass: 'hover-linkedin' },
     { icon: FileCode2, href: 'https://leetcode.com/u/rTiZLdfR0q/', label: 'LeetCode', colorClass: 'hover-leetcode' },
     { icon: Instagram, href: '#', label: 'Instagram', colorClass: 'hover-instagram' },
     { icon: FileCode2, href: 'https://leetcode.com/u/riteshrsharma71/', label: 'LeetCode', colorClass: 'hover-leetcode' },

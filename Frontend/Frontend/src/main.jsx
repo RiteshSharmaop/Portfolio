@@ -10,6 +10,8 @@ import Projects from "./Components/Projects"
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import WorkInProgress from "./Components/WorkInProgress";
+import Leetcode from "./Components/Leetcode";
+import ProjectInfo from "./Components/ProjectInfo";
 
 
 const router = createBrowserRouter([
@@ -37,17 +39,21 @@ const router = createBrowserRouter([
         path: "Education",
         element: <Education />
       },
-      // {
-      //   path: "/c/contact",
-      //   element: <Contact />
-      // },
-      // {
-      //   path: "/c/POST",
-      //   element: <Contact />
-      // },
+      {
+        path: "/pro",
+        element: <ProjectInfo />
+      },
+      {
+        path: "/c/contact",
+        element: <Contact />
+      },
       {
         path: "/wip",
         element: <WorkInProgress date = "31-March-2025"/>
+      },
+      {
+        path: "/leetcode",
+        element: <Leetcode />
       },
     ]
   }

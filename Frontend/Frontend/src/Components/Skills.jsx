@@ -6,7 +6,7 @@ export default function Skills() {
     <>
        <section className="skill" id="skill">
         <h1 className="heading">
-          <span>my</span> Skills{" "}
+          my<span> Skills</span>{" "}
         </h1>
 
         <div className="bro">

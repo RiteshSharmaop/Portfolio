@@ -478,7 +478,9 @@ section{
     z-index: 100;
     display: none;
 }
-
+.navigateTo {
+    cursor: pointer;
+}
 
 
 @media (max-width:1200px){
@@ -649,4 +651,68 @@ section{
   }
   .socialss{
     bottom: 0%;
+  }
+
+  .projectInfo{
+    color: #ffff;
+  }
+  .proImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .coverImagePro {
+    margin-top: 20px;
+    height: 50vh;
+    width: 95%;
+    border-radius: 10%;
+  }
+  .social-buttons {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-around;
+    gap: 26px;
+    padding: 16px;
+  }
+  .social-buttons span {
+    font-size: 16px;
+  }
+  .social-buttons svg {
+    height: 30px;
+  }
+  .aboutProject {
+    width: 80%;
+    color: #ffff;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.boxer {
+    line-height: 25px;
+    word-spacing: 2px;
+}
+  .boxer ul li {
+    list-style-type: none;
+
+  }
+  .boxer h1 {
+    font-size: 25px;
+  }
+  .boxer h2 {
+    font-size: 25px;
+  }
+  .boxer h3 {
+    text-indent: 30px;
+    
+  }
+  .boxer li{
+    text-indent: 30px;
+    font-size: 15px;
   }

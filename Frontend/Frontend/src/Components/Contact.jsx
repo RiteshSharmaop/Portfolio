@@ -6,7 +6,7 @@ function Contact() {
         <div>
             <section className="contact" id="contact">
 
-                <h1 className="heading"> <span>contact</span> me </h1>
+                <h1 className="heading"> contact<span> me </span> </h1>
 
                 <div className="row">
 
@@ -49,7 +49,7 @@ function Contact() {
 
                         <textarea name="message" id="messsage" cols="30" rows="10" className="box message" placeholder="message"></textarea>
                         <p> &#160;</p>
-                        <button type="submit" className="btn"> send <i className="fas fa-paper-plane"></i> </button>
+                        <button type="submit" onClick={(e)=> e.preventDefault()} className="btn"> send <i className="fas fa-paper-plane"></i> </button>
 
                     </form>
 
