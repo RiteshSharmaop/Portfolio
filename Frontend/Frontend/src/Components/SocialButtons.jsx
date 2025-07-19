@@ -10,7 +10,7 @@ const SocialButtons = () => {
     { icon: Code2, href: 'https://www.codechef.com/users/riteshnub', label: 'CodeChef', colorClass: 'hover-codechef' },
     { icon: Code2, href: 'https://codeforces.com/profile/noob1204', label: 'Codeforces', colorClass: 'hover-linkedin' },
     { icon: FileCode2, href: 'https://leetcode.com/u/rTiZLdfR0q/', label: 'LeetCode', colorClass: 'hover-leetcode' },
-    { icon: Instagram, href: '#', label: 'Instagram', colorClass: 'hover-instagram' },
+    // { icon: Instagram, href: '#', label: 'Instagram', colorClass: 'hover-instagram' },
     { icon: FileCode2, href: 'https://leetcode.com/u/riteshrsharma71/', label: 'LeetCode', colorClass: 'hover-leetcode' },
   ];
   
