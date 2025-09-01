@@ -13,17 +13,17 @@ export default function About() {
 
                     <div className="info">
                         <h3> <span> name : </span> ritesh sharma </h3>
-                        <h3> <span> age : </span> 21 </h3>
+                        <h3> <span> age : </span> 22 </h3>
                         <h3> <span> qualification : </span> B.tech </h3>
                         <h3> <span> post : </span> student </h3>
                         <h3> <span> language : </span> hindi / english </h3>
-                        <a href="https://docs.google.com/document/d/1YbnhMC4K3L5KF9CBdGWUw1Kaq3AXmdqr/edit?usp=sharing&ouid=103630672867232895794&rtpof=true&sd=true"><button className="btn"> download CV <i className="fas fa-download"></i> </button></a>
+                        <a href=""><button className="btn"> download CV <i className="fas fa-download"></i> </button></a>
                     </div>
 
                      <div className="counter">
 
                        <div className="box">
-                            <span>6th</span>
+                            <span>7th</span>
                             <h3>Semester</h3>
                         </div>
 

@@ -27,6 +27,14 @@ export default function Skills() {
             <Box className="ox" tit="MongoDb" prof="" />
             <Box className="ox" tit="SQL" prof="" />
             <Box className="ox" tit="TailWind" prof="" />
+            <Box className="ox" tit="Docker" prof="" />
+            <Box className="ox" tit="OOPs" prof="" />
+            <Box className="ox" tit="High Level Design" prof="" />
+            <Box className="ox" tit="Low Level Design" prof="" />
+            <Box className="ox" tit="Computer Network" prof="" />
+            <Box className="ox" tit="DBMS" prof="" />
+            <Box className="ox" tit="Operating System " prof="" />
+            <Box className="ox" tit="Syatem Design" prof="" />
           </div> 
         </div>
       </section>
