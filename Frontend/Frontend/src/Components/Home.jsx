@@ -10,7 +10,7 @@ export default function Home() {
 
                 <h3>HI THERE !</h3>
                 <h1>I'M <span>ritesh sharma</span></h1>
-                <p>a final-year CSE student passionate about Compititive Programming, full-stack development, high-level system design, and Data structures and Algorithm. I enjoy building scalable apps, solving competitive programming challenges and solving & fixing bugs.
+                <p>a final-year CSE student passionate about Compititive Programming, full-stack development, system design, and Data structures and Algorithm. I enjoy building scalable apps, solving competitive programming challenges and solving & fixing bugs.
 
                 </p>
                 <a href="/about"><button className="btn">about me <i className="fas fa-user"></i></button></a>
